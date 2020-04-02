@@ -5,21 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="videos.css">
 </head>
 <body>
     <header>
         <a href="index.html"><span>FutureTube</span></a>
         <input type="search" placeholder="Busca">
     </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="#">Em alta</a></li>
+            <li><a href="#">Inscrições</a></li>
+            <li><a href="#" class="borda">Originais</a></li>
+            <li><a href="#">Biblioteca</a></li>
+            <li><a href="#">Histórico</a></li>
+        </ul>
+    </nav>
+
+    <section class="video-direita">
+        <a href="media1.html"><video>
+            <source src="https://storage.googleapis.com/future-apis.appspot.com/1.mp4" type="video/mp4" />
+        </video></a>
+        <a href="media1.html"><h3>Media 1</h3></a>
+        <a href="media2.html"><video>
+            <source src="https://storage.googleapis.com/future-apis.appspot.com/2.mp4" type="video/mp4" />                        
+        </video></a>
+        <a href="media2.html"><h3>Media 2</h3></a>
+        <a href="media3.html"><video>
+            <source src="https://storage.googleapis.com/future-apis.appspot.com/3.mp4" type="video/mp4" />
+        </video></a>
+        <a href="media3.html"><h3>Media 3</h3></a>
+    </section>
+
     <section>
-        <div class="container col">
-            <div class="row">
-                <h1>Media 7</h1>
-            </div>
-            <div class="row">
-                <video controls>
+        <div class="container">
+            <div class="col col-video">
+                <video controls class="video-cheio">
                     <source src="https://storage.googleapis.com/future-apis.appspot.com/7.mp4" type="video/mp4" />
                 </video>
+            </div>
+                <div class="col col-video">
+                    <span>Media 7</span>
+                    <button type="submit" class="botao">Curtir</button>
+                    <button type="submit" class="botao">Descurtir</button>
+                </div>
             </div>
             
         </div>
