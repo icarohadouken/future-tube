@@ -1,0 +1,49 @@
+section .video-cheio{
+    padding: 0;
+    margin-right: 0;
+    margin-left: auto;
+}
+section.video-direita{
+    display: none;
+}
+
+@media (min-width: 728px) {
+    section.video-direita{
+        padding-left: 1%;
+        height: 100%;
+        display: block;
+        max-width: 12%;
+        position: fixed;
+        overflow: auto;
+        right: 10px;
+        text-align: center;
+        border-left: 1px solid #000;
+    }
+    section.video-direita h3{
+        margin-top: -3px;
+    }
+}
+
+.col-video{
+    max-width: 70%;
+    padding: 0;
+    text-align: right;
+}
+
+.col-video>button{
+    display: inline;
+    border: none;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 8px 16px;
+    background-color: #D56062;
+}
+.col-video>button:hover{
+    background-color: #FCB9B2;
+}
+
+.col-video span{
+    font-size: 30px;
+    float: left;
+
+}
